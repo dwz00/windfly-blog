@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>你的名字 · 个人博客</title>
+  <meta name="description" content="你的简介一句话：你是谁，你关注什么。" />
+  <meta name="color-scheme" content="light dark" />
+
+  <!-- Open Graph（分享卡片） -->
+  <meta property="og:title" content="你的名字 · 个人博客" />
+  <meta property="og:description" content="你的简介一句话：你是谁，你关注什么。" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://yourname.github.io/" />
+
+  <link rel="stylesheet" href="./assets/style.css" />
+  <script defer src="./assets/main.js"></script>
+
+  <!-- 可选：简单的结构化数据（有助于搜索引擎理解） -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "你的名字",
+    "url": "https://yourname.github.io/",
+    "sameAs": [
+      "https://github.com/yourname",
+      "https://www.linkedin.com/in/yourname"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="./">
+        <span class="brand-dot" aria-hidden="true"></span>
+        <span class="brand-text">你的名字</span>
+      </a>
+
+      <nav class="nav">
+        <a href="#posts">文章</a>
+        <a href="#projects">项目</a>
+        <a href="#about">关于</a>
+      </nav>
+
+      <button class="theme-toggle" type="button" aria-label="切换深色模式">
+        <span class="theme-toggle-text">主题</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>你好，我是<span class="accent">你的名字</span>。</h1>
+          <p class="subtitle">一句话简介：例如“专注于数据 / 前端 / 设计 / 写作”。</p>
+
+          <div class="cta">
+            <a class="btn primary" href="https://github.com/yourname" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="btn" href="mailto:you@example.com">Email</a>
+            <a class="btn" href="https://x.com/yourname" target="_blank" rel="noreferrer">X / Twitter</a>
+          </div>
+
+          <p class="meta">上海 / 远程 · 更新于 <span id="last-updated">2026-03-23</span></p>
+        </div>
+
+        <div class="hero-card" id="about">
+          <div class="avatar" aria-hidden="true">
+            <!-- 如果你放了头像文件，可改成：<img src="./assets/avatar.png" alt="你的头像" /> -->
+            <div class="avatar-fallback">你</div>
+          </div>
+          <h2>关于我</h2>
+          <p>
+            这里写 3-5 句简介：
+            你做什么、擅长什么、正在学习什么、希望写作分享什么。
+          </p>
+          <ul class="bullets">
+            <li>兴趣：A / B / C</li>
+            <li>当前：正在做 XX</li>
+            <li>联系：you@example.com</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="posts">
+      <div class="container">
+        <div class="section-head">
+          <h2>最新文章</h2>
+          <p class="section-subtitle">手动维护的文章列表（适合轻量个人站）。</p>
+        </div>
+
+        <ul class="card-list">
+          <li class="card">
+            <a class="card-title" href="https://example.com" target="_blank" rel="noreferrer">文章标题 1</a>
+            <div class="card-meta">2026-03-23 · 主题标签</div>
+            <p class="card-desc">一句话摘要：这篇文章解决了什么问题？</p>
+          </li>
+          <li class="card">
+            <a class="card-title" href="https://example.com" target="_blank" rel="noreferrer">文章标题 2</a>
+            <div class="card-meta">2026-02-10 · 主题标签</div>
+            <p class="card-desc">一句话摘要。</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-head">
+          <h2>项目</h2>
+          <p class="section-subtitle">展示 2-6 个代表作即可。</p>
+        </div>
+
+        <div class="grid">
+          <article class="tile">
+            <h3>项目名 A</h3>
+            <p>一句话描述：做了什么、价值是什么。</p>
+            <div class="tile-links">
+              <a href="https://github.com/yourname/project-a" target="_blank" rel="noreferrer">代码</a>
+              <a href="https://example.com" target="_blank" rel="noreferrer">演示</a>
+            </div>
+          </article>
+
+          <article class="tile">
+            <h3>项目名 B</h3>
+            <p>一句话描述。</p>
+            <div class="tile-links">
+              <a href="https://github.com/yourname/project-b" target="_blank" rel="noreferrer">代码</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> 你的名字</span>
+      <span class="sep" aria-hidden="true">·</span>
+      <a href="https://github.com/yourname" target="_blank" rel="noreferrer">GitHub</a>
+      <span class="sep" aria-hidden="true">·</span>
+      <a href="#" id="back-to-top">回到顶部</a>
+    </div>
+  </footer>
+</body>
+</html>
